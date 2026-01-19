@@ -1,48 +1,107 @@
 <!DOCTYPE html>
-<main lang="en">
+<html lang="en">
 
-    <h1>Navigation Menu Using CSS Flex</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" title="Home">Home</a></li>
-            <li><a href="#" title="About Us">About</a></li>
-            <li><a href="#" title="Our Partners">Affiliates</a></li>
-            <li><a href="#" title="History of Our Organization">History</a></li>
-            <li><a href="#" title="Contact Us">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>Manually shrink the screen by dragging the border of the preview window</p>
-        <p>Review the CSS panel for details applied to the navigation structure.</p>
+    <title>WDD 131 – Dynamic Web Fundamentals – Rosa Angela Posadas Hernandez</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Rosa Angela Posadas Hernandez | course landing page with profile and web dev resources." />
+    <meta name="author" content="Rosa Angela Posadas Hernandez" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav class="site-nav">
+            <a href="https://www.linkedin.com/in/rosa-posadas-725665144" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-cor/13?lang=eng" target="_blank"
+                rel="noopener">Scripture</a>
+            <a href="#" title="Placeholder for now">Final Project</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1 class="page-title">Rosa Angela Posadas Hernandez</h1>
+
+        <div class="cards">
+            <!-- Card 1: About Me -->
+            <section class="card card-wide">
+                <h2 class="card-title">About Me</h2>
+
+                <div class="card-body">
+                    <div class="about-top">
+                        <div class="about-text">
+                            <p>
+                                Hello! My name is Rosa Ángela, and I am a dedicated educator who believes in the
+                                transformative power of learning.
+                                I enjoy creating engaging lessons and exploring technology to support students of
+                                different ages and needs.
+                            </p>
+                            <p>
+                                This page is my WDD 131 course landing page where I will keep key resources and show my
+                                progress as I build skills in HTML,
+                                CSS, and JavaScript.
+                            </p>
+                        </div>
+
+                        <img class="profile" src="images/profile.jpg" alt="Rosa Angela Posadas Hernandez profile photo"
+                            width="120" height="180" />
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h3 class="subheading">Tamaulipas, México</h3>
+
+                    <div class="place-grid">
+                        <figure class="flag-block">
+                            <img class="flag" src="images/flag-mexico.jpg" alt="Flag" width="140" height="90" />
+                            <figcaption>Official Flag</figcaption>
+                        </figure>
+
+                        <div class="place-text">
+                            <p>
+                                México is a vibrant country full of color, tradition, and kindness. From beautiful
+                                beaches and delicious food
+                                to strong community values, I’m proud to live in a place where culture, family, and
+                                creativity are part of everyday life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card 2: Web Dev Resources -->
+            <section class="card card-narrow">
+                <h2 class="card-title">Web Dev Resources</h2>
+
+                <div class="card-body">
+                    <ul class="resource-list">
+                        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+                        </li>
+                        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                        <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing
+                                Magazine</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <header>
-        <h1 contenteditable>Header</h1>
-    </header>
-    <div class="left-sidebar" contenteditable>Left Sidebar</div>
-    <main contenteditable></main>
-    <div class="right-sidebar" contenteditable>Right Sidebar</div>
-    <footer contenteditable>Footer Content</footer>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample HTML Page</title>
-    </head>
-
-    <body>
-        <h1>WDD 131 - Rosa A. Posadas Hdz.</h1>
-    </body>
-
-</main>
-<div class="parent">
-    <header class="pink section">Header</header>
-    <div class="left-side blue section" contenteditable>Left Sidebar</div>
-    <main class="section coral" contenteditable>Main Content</main>
-    <div class="right-side yellow section" contenteditable>Right Sidebar</div>
-    <footer class="green section">Footer</footer>
-</div>
-</main>
+    <footer class="site-footer">
+        <p class="footer-line">
+            © <span id="currentyear"></span> Rosa Angela Posadas Hernandez | México
+        </p>
+        <p id="lastModified" class="footer-modified"></p>
+    </footer>
+</body>
 
 </html>
