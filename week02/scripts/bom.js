@@ -1,12 +1,36 @@
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('#list'); // <-- "blank"
+const input = document.querySelector("#favchap");
+const addButton = document.querySelector("#addChapter");
+const list = document.querySelector("#list");
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+addButton.addEventListener("click", () => {
+    const chapter = input.value.trim();
 
-li.textContent = input.value;  // lee
-deleteButton.textContent = '❌';
+    if (chapter === "") {
+        input.focus();
+        return;
+    }
 
-li.append(deleteButton); // el botón va dentro del li
-list.append(li);         // li va dentro del ul
+    const li = document.createElement("li");
+
+    const span = document.createElement("span");
+    span.textContent = chapter;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "❌";
+    deleteButton.classList.add("delete");
+    deleteButton.setAttribute("aria-label", `Remove ${chapter}`);
+
+    li.append(span, deleteButton);
+    list.append(li);
+
+    input.value = "";
+    input.focus();
+});
+
+list.addEventListener("click", (e) => {
+    if (e.target.classList.contains("delete")) {
+        const li = e.target.closest("li");
+        if (li) li.remove();
+        input.focus();
+    }
+});
