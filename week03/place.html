@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Papantla, Veracruz</title>
     <link rel="stylesheet" href="styles/place.css">
-    <script defer src="scripts/place.js"></script>
 </head>
 
 <body>
@@ -15,13 +14,15 @@
     </header>
 
     <main>
-        <div class="hero-area">
-            <picture class="hero">
+        <section class="hero">
+            <picture>
                 <source media="(min-width: 768px)" srcset="images/papantla-hero-large.webp">
                 <img src="images/papantla-hero-small.webp" alt="View of Papantla, Veracruz" width="1200" height="600"
                     loading="lazy">
             </picture>
+        </section>
 
+        <div class="grid-two">
             <section class="card data">
                 <h2>Data</h2>
                 <ul>
@@ -34,7 +35,6 @@
 
             <section class="card weather">
                 <h2 class="weather-title">Weather</h2>
-
                 <img class="weather-icon" src="images/weather-sun.svg" alt="Sunny weather icon" width="64" height="64">
 
                 <p>Temperature: <span id="temperature">28</span> °C</p>
@@ -49,6 +49,8 @@
         <p>&copy; <span id="currentyear"></span> Papantla, Veracruz, Mexico</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+
+    <script defer src="scripts/place.js"></script>
 </body>
 
 </html>

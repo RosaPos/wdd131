@@ -53,11 +53,7 @@ img {
     display: block;
 }
 
-/* HERO AREA */
-.hero-area {
-    position: static;
-}
-
+/* HERO */
 .hero img {
     width: 100%;
     border-radius: var(--radius);
@@ -73,7 +69,27 @@ img {
     margin-top: var(--space-2);
 }
 
-/* GLASSMORPHISM EFFECT ON CARDS IN WIDE VIEW */
+/* Layout for Data + Weather BELOW the hero */
+.grid-two {
+    display: grid;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+}
+
+/* Two columns on wider screens (still below hero) */
+@media (min-width: 700px) {
+    .grid-two {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    /* Optional: avoid extra spacing if you want tighter cards in grid */
+    .grid-two .card {
+        margin-top: 0;
+    }
+}
+
+/* GLASSMORPHISM (optional) */
 @media (min-width: 768px) {
     .card {
         background: rgba(255, 255, 255, 0.88);
@@ -93,29 +109,6 @@ img {
 
     .weather-icon {
         display: none;
-    }
-}
-
-/* POSITION CARDS IN WIDE VIEW */
-@media (min-width: 900px) {
-    .hero-area {
-        position: relative;
-    }
-
-    .data,
-    .weather {
-        position: absolute;
-        top: 1.5rem;
-        width: 280px;
-        margin-top: 0;
-    }
-
-    .data {
-        left: 1.5rem;
-    }
-
-    .weather {
-        right: 1.5rem;
     }
 }
 
