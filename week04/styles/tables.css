@@ -1,0 +1,35 @@
+table {
+    width: 400px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+thead {
+    background-color: #000;
+    color: #fff;
+}
+
+thead tr:last-child {
+    background-color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 0.85rem;
+    padding: 0.3rem;
+}
+
+.blank {
+    background-color: #000;
+}
