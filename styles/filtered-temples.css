@@ -154,6 +154,7 @@ figcaption {
 .label {
     font-variant: small-caps;
 }
+
 /* FOOTER */
 footer {
     background: var(--navy);
@@ -164,4 +165,20 @@ footer {
 
 .footer-modified {
     margin-top: 0.25rem;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        display: block;
+    }
 }
