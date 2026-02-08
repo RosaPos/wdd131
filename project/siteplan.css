@@ -12,7 +12,7 @@ body {
     background: var(--gray);
     color: var(--text);
     margin: 0;
-    padding: 1rem;
+    padding: 0;
 }
 
 .logo {
@@ -20,12 +20,10 @@ body {
     height: auto;
 }
 
-header,
-footer {
+.site-header,
+.site-footer {
     background: var(--navy);
     color: white;
-    padding: 1rem;
-    text-align: center;
 }
 
 main {
@@ -60,4 +58,11 @@ main img {
 .chip--gray {
     background: var(--gray);
     border: 1px solid #ddd;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    background: transparent;
 }
