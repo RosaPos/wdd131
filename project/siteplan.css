@@ -1,5 +1,8 @@
 :root {
-    --primary: #24455f;
+    --navy: #24455f;
+    --white: #ffffff;
+    --gray: #f5f5f5;
+
     --secondary: #f4f4f4;
     --text: #111;
 }
@@ -50,4 +53,24 @@ main img {
     height: auto;
     display: block;
     margin: 0.75rem auto;
+}
+
+.chip {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.chip--navy {
+    background: var(--navy);
+}
+
+.chip--white {
+    background: var(--white);
+    border: 1px solid #ddd;
+}
+
+.chip--gray {
+    background: var(--gray);
+    border: 1px solid #ddd;
 }
