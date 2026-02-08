@@ -8,8 +8,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: var(--secondary);
+    font-family: "Noto Sans", Arial, "Segoe UI", sans-serif;
+    background: var(--gray);
     color: var(--text);
     margin: 0;
     padding: 1rem;
@@ -22,7 +22,7 @@ body {
 
 header,
 footer {
-    background: var(--primary);
+    background: var(--navy);
     color: white;
     padding: 1rem;
     text-align: center;
@@ -31,7 +31,7 @@ footer {
 main {
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: var(--white);
     padding: 1rem;
 }
 
