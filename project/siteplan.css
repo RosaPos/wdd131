@@ -1,0 +1,53 @@
+:root {
+    --primary: #24455f;
+    --secondary: #f4f4f4;
+    --text: #111;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+    margin: 0;
+    padding: 1rem;
+}
+
+.logo {
+    max-width: 160px;
+    height: auto;
+}
+
+header,
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 1rem;
+}
+
+.wireframe {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.wf-box {
+    border: 2px dashed #24455f;
+    padding: 0.75rem;
+    background: #ffffff;
+    text-align: left;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.75rem auto;
+}
