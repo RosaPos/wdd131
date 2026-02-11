@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="card">
+        <form method="get" action="review.html">
+            <!-- PRODUCT NAME -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- RATING -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1" required> ⭐</label>
+                    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+                    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+                    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+                </div>
+            </fieldset>
+
+            <!-- DATE -->
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- FEATURES -->
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+                <div class="features">
+                    <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="Design"> Design</label>
+                </div>
+            </fieldset>
+
+            <!-- REVIEW -->
+            <label for="review">Written Review <span class="muted">(Optional)</span></label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- USER -->
+            <label for="username">Your Name <span class="muted">(Optional)</span></label>
+            <input type="text" id="username" name="username">
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy;2026 | Rosa Angela Posadas Hernandez</p>
+    </footer>
+</body>
+
+
+</html>
