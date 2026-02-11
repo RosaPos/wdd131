@@ -170,3 +170,20 @@ input[type="submit"]:hover {
 .link-button:hover {
     border-color: var(--focus);
 }
+
+@media (min-width: 700px) {
+    .rating {
+        justify-content: space-between;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    input[type="submit"],
+    .link-button {
+        width: fit-content;
+        justify-self: start;
+    }
+}
