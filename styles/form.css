@@ -123,11 +123,15 @@ legend {
     gap: .5rem;
 }
 
-.features label {
-    font-weight: 600;
+.features .check {
     display: flex;
-    gap: .6rem;
     align-items: center;
+    gap: .6rem;
+}
+
+.features .check label {
+    font-weight: 600;
+    margin: 0;
 }
 
 input[type="submit"] {
