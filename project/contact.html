@@ -25,10 +25,16 @@
                 <span class="brand__name">3D XD</span>
             </a>
 
-            <nav class="nav" aria-label="Primary">
-                <a href="index.html">Home</a>
+            <!-- Hamburger button -->
+            <button class="menu-button" type="button" aria-label="Open menu" aria-controls="primary-nav"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="primary-nav" class="nav" aria-label="Primary">
+                <a href="index.html" aria-current="page">Home</a>
                 <a href="products.html">Products &amp; Services</a>
-                <a class="btn btn--gold" href="contact.html" aria-current="page">Contact</a>
+                <a class="btn btn--gold" href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -94,22 +100,23 @@
                         </div>
 
                         <div class="full">
-                            <fieldset>
+                            <fieldset class="checkbox-group">
                                 <legend>Extra options (optional)</legend>
-                                <div class="features">
-                                    <div class="check">
-                                        <input type="checkbox" id="opt-preview" name="options" value="Preview">
-                                        <label for="opt-preview">Preview before printing</label>
-                                    </div>
-                                    <div class="check">
-                                        <input type="checkbox" id="opt-bulk" name="options" value="Bulk">
-                                        <label for="opt-bulk">Bulk order (event)</label>
-                                    </div>
-                                    <div class="check">
-                                        <input type="checkbox" id="opt-pickup" name="options" value="Pickup">
-                                        <label for="opt-pickup">Local pickup</label>
-                                    </div>
-                                </div>
+
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="preview">
+                                    <span>Preview before printing</span>
+                                </label>
+
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="bulk">
+                                    <span>Bulk order (event)</span>
+                                </label>
+
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="pickup">
+                                    <span>Local pickup</span>
+                                </label>
                             </fieldset>
                         </div>
 

@@ -4,7 +4,6 @@
 
     const params = new URLSearchParams(window.location.search);
 
-    // Get values (fallback to "—" if missing)
     const get = (name) => (params.get(name) || "").trim();
 
     const data = {
@@ -17,10 +16,8 @@
         details: get("details")
     };
 
-    // Collect checkboxes: name="options" can appear multiple times
     const options = params.getAll("options").map(v => v.trim()).filter(Boolean);
 
-    // ----- localStorage: count -----
     const currentCount = Number(localStorage.getItem(KEY_COUNT) || "0");
     const newCount = currentCount + 1;
     localStorage.setItem(KEY_COUNT, String(newCount));
@@ -28,7 +25,6 @@
     const countEl = document.querySelector("#quoteCount");
     if (countEl) countEl.textContent = String(newCount);
 
-    // ----- localStorage: store request list (array) -----
     const saved = localStorage.getItem(KEY_LIST);
     const list = saved ? JSON.parse(saved) : [];
     list.push({
@@ -38,7 +34,6 @@
     });
     localStorage.setItem(KEY_LIST, JSON.stringify(list));
 
-    // ----- Render summary using template literals -----
     const clean = (value) => (value && value.length ? value : "—");
     const optionsText = options.length ? options.join(", ") : "—";
 
