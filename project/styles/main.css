@@ -169,7 +169,6 @@ p {
     min-height: 80vh;
     display: grid;
     align-items: center;
-    /* desktop */
     overflow: hidden;
     border-bottom: 1px solid var(--border);
     background: var(--grad-blue-soft);
@@ -186,7 +185,6 @@ p {
     object-fit: cover;
     z-index: -1;
     border-radius: 0;
-    /* <-- sin redondez */
 }
 
 .hero__wrap {
@@ -194,7 +192,6 @@ p {
     gap: 1.25rem;
     align-items: start;
     padding: 2rem 0;
-    /* espacio interno del contenido */
 }
 
 .hero__card {
@@ -359,7 +356,6 @@ textarea {
     gap: 1.25rem;
     align-items: start;
 
-    /* 1 columna y centrado */
     grid-template-columns: 1fr;
     justify-items: center;
 }
@@ -370,10 +366,8 @@ textarea {
     overflow: hidden;
     width: 100%;
     max-width: 980px;
-    /* ajusta si quieres más/menos ancho */
 }
 
-/* Grid de 4 imágenes (2x2) */
 .showcase-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -392,16 +386,13 @@ textarea {
     padding: 1.25rem;
 }
 
-/* Contenedor de las 2 cards (How it works / Custom requests) */
 .feature-side {
     display: grid;
     gap: 1rem;
     width: 100%;
     max-width: 980px;
-    /* mismo ancho que showcase para que se vea alineado */
 }
 
-/* Estilo para las imágenes dentro de las cards derechas */
 .feature-side img {
     width: 100%;
     height: auto;
@@ -411,14 +402,12 @@ textarea {
     margin-bottom: .75rem;
 }
 
-/* En móvil, la mini-galería puede ser 1 columna */
 @media (max-width: 600px) {
     .showcase-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* En pantalla grande: How it works y Custom requests uno al lado del otro */
 @media (min-width: 900px) {
     .feature-side {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -442,7 +431,6 @@ textarea {
     margin: 0 auto;
 }
 
-/* Quick quote en una sola columna */
 .mini-form .form-grid {
     grid-template-columns: 1fr;
 }
@@ -481,7 +469,6 @@ textarea {
 @media (min-width: 720px) {
     .hero__wrap {
         grid-template-columns: 1.1fr 0.9fr;
-        /* texto + card */
         gap: 1.5rem;
     }
 
@@ -496,7 +483,6 @@ textarea {
     }
 }
 
-/* <-- CLAVE: en móvil, el hero sube arriba (como Bambu Lab) */
 @media (max-width: 720px) {
     .hero {
         align-items: start;
@@ -507,17 +493,13 @@ textarea {
         padding-top: 1rem;
         padding-bottom: 2rem;
         justify-items: center;
-        /* centra los “items” del grid */
         text-align: center;
-        /* centra texto */
     }
 
-    /* si tienes este bloque (recomendado) */
     .hero__content {
         text-align: center;
     }
 
-    /* centra los botones */
     .cta-row {
         justify-content: center;
     }
@@ -540,19 +522,16 @@ textarea {
     grid-column: 1 / -1;
 }
 
-/* Desktop: form + side card */
 @media (min-width: 900px) {
     .contact-layout {
         grid-template-columns: 1.6fr 1fr;
     }
 }
 
-/* Reutiliza tu sistema .form-grid */
 .contact-form .form-grid {
     grid-template-columns: 1fr;
 }
 
-/* En pantallas medianas, 2 columnas como form.html pero sin quedar enorme */
 @media (min-width: 720px) {
     .contact-form .form-grid {
         grid-template-columns: 1fr 1fr;
