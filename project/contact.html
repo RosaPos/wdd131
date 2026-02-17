@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact 3D XD to request a quote for custom 3D prints.">
+    <meta name="author" content="Rosa Angela Posadas Hernandez">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>3D XD | Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header__bar">
+            <a class="brand" href="index.html">
+                <img src="images/3dxd-logo.svg" alt="3D XD logo" width="96" height="96">
+                <span class="brand__name">3D XD</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products &amp; Services</a>
+                <a class="btn btn--gold" href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container contact-layout">
+
+            <!-- Intro -->
+            <header class="contact-hero">
+                <h1>Contact 3D XD</h1>
+                <p class="muted">Tell us your idea and we’ll send an estimate. Fields marked with * are required.</p>
+            </header>
+
+            <!-- Main Card (Form) -->
+            <section class="card">
+                <h2>Request a quote</h2>
+
+                <form class="contact-form" method="get" action="contact-success.html">
+                    <div class="form-grid">
+
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="e.g., Rosa (optional)">
+                        </div>
+
+                        <div>
+                            <label for="email">Email *</label>
+                            <input id="email" name="email" type="email" required placeholder="e.g., you@email.com">
+                        </div>
+
+                        <div>
+                            <label for="phone">WhatsApp (optional)</label>
+                            <input id="phone" name="phone" type="tel" placeholder="e.g., 833 000 0000">
+                        </div>
+
+                        <div>
+                            <label for="product">Product *</label>
+                            <select id="product" name="product" required>
+                                <option value="" disabled selected>Select one...</option>
+                                <option value="Keychains">Keychains</option>
+                                <option value="Mini figures">Mini figures</option>
+                                <option value="Event souvenirs">Event souvenirs</option>
+                                <option value="Custom request">Custom request</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="qty">Quantity *</label>
+                            <input id="qty" name="qty" type="number" min="1" required placeholder="e.g., 30">
+                        </div>
+
+                        <div>
+                            <label for="needby">Needed by (date)</label>
+                            <input id="needby" name="needby" type="date">
+                        </div>
+
+                        <div class="full">
+                            <label for="details">Details *</label>
+                            <textarea id="details" name="details" required
+                                placeholder="Example: 30 keychains, blue + gold, name: Ana, theme: Minecraft"></textarea>
+                            <p class="muted" style="margin-top:.5rem;">Include: theme, colors, text/name, size, and any
+                                reference notes.</p>
+                        </div>
+
+                        <div class="full">
+                            <fieldset>
+                                <legend>Extra options (optional)</legend>
+                                <div class="features">
+                                    <div class="check">
+                                        <input type="checkbox" id="opt-preview" name="options" value="Preview">
+                                        <label for="opt-preview">Preview before printing</label>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="opt-bulk" name="options" value="Bulk">
+                                        <label for="opt-bulk">Bulk order (event)</label>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="opt-pickup" name="options" value="Pickup">
+                                        <label for="opt-pickup">Local pickup</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="full">
+                            <button class="btn btn--gold" type="submit">Send request</button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
+            <aside class="card contact-side">
+                <h2>Quick info</h2>
+                <ul class="product-bullets">
+                    <li>Custom 3D printed keychains and gifts</li>
+                    <li>Names, characters, themed designs</li>
+                    <li>Pickup available (local)</li>
+                </ul>
+
+                <div class="cta-block">
+                    <h3 style="margin-bottom:.25rem;">WhatsApp</h3>
+                    <p class="muted" style="margin-bottom:.75rem;">Prefer WhatsApp? Message us directly.</p>
+
+                    <a class="btn btn--primary" href="https://wa.me/528332345964" target="_blank" rel="noopener">
+                        Message on WhatsApp
+                    </a>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> 3D XD</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

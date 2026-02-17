@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="3D XD: custom 3D printed keychains, gifts, and event souvenirs.">
+    <meta name="author" content="Rosa Angela Posadas Hernandez">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>3D XD | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header__bar">
+            <a class="brand" href="index.html">
+                <img src="images/3dxd-logo.svg" alt="3D XD logo" width="96" height="96">
+                <span class="brand__name">3D XD</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="products.html">Products &amp; Services</a>
+                <a class="btn btn--gold" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero__wrap">
+                <div class="hero__content">
+                    <p class="badge">✨ Custom 3D Printing</p>
+                    <h1>Creative 3D Prints for Gifts &amp; Events</h1>
+                    <p class="muted">Custom keychains and souvenirs made with fun designs.</p>
+
+                    <div class="cta-row">
+                        <a class="btn btn--gold" href="contact.html">Request a quote</a>
+                        <a class="btn btn--primary" href="products.html">See products</a>
+                    </div>
+                </div>
+
+                <div class="hero__media">
+                    <img src="images/hero-1200.webp" alt="3D printed items" width="1200" height="800" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1 -->
+        <section class="section">
+            <div class="container">
+
+                <div class="feature-layout">
+
+                    <section class="card showcase" aria-label="Product highlights">
+                        <div class="showcase-grid">
+                            <img src="images/keychain-800.webp" alt="3D printed keychain example" loading="lazy"
+                                width="500" height="400">
+                            <img src="images/keychain-1-400.webp" alt="Keychain example 1" loading="lazy" width="500"
+                                height="400">
+                            <img src="images/keychain-2-400.webp" alt="Keychain example 2" loading="lazy" width="500"
+                                height="400">
+                            <img src="images/keychain-3-400.webp" alt="Keychain example 3" loading="lazy" width="500"
+                                height="400">
+                        </div>
+
+                        <div class="showcase-body">
+                            <h2 class="showcase-title">Keychains &amp; custom gifts</h2>
+                            <p class="muted">Names, characters, and themed designs for gifts and events.</p>
+
+                            <div class="cta-row">
+                                <a class="btn btn--gold" href="contact.html">Request a quote</a>
+                                <a class="btn btn--primary" href="products.html">See products</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="feature-side">
+                        <article class="card">
+                            <img src="images/Howitworks.webp" alt="How it works" loading="lazy" width="400"
+                                height="300">
+                            <h3>How it works</h3>
+                            <ol class="steps">
+                                <li><strong>Send your idea</strong><br><span class="muted">Theme, name/text, and
+                                        quantity.</span></li>
+                                <li><strong>Confirm details</strong><br><span class="muted">We confirm size, colors,
+                                        time, and
+                                        price.</span></li>
+                                <li><strong>Pick up / delivery</strong><br><span class="muted">Ready to gift.</span>
+                                </li>
+                            </ol>
+                        </article>
+
+                        <article class="card">
+                            <img src="images/Custom.webp" alt="How it works" loading="lazy" width="400" height="300">
+                            <h3>Custom requests</h3>
+                            <p class="muted">You share the idea. We confirm time and price.</p>
+                            <ul class="product-bullets">
+                                <li>Mockup/preview before printing</li>
+                                <li>Bulk orders for events</li>
+                                <li>Local pickup available</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="section section--soft">
+            <div class="container">
+                <section class="card">
+                    <h2>Quick quote</h2>
+                    <p class="muted">Fill this quick form. (For now, it does not send — we will connect it later.)</p>
+
+                    <form class="mini-form" action="contact-success.html" method="get">
+                        <div class="form-grid">
+                            <div>
+                                <label for="qty">Quantity</label>
+                                <input id="qty" name="qty" type="number" min="1" placeholder="e.g., 20" required>
+                            </div>
+
+                            <div>
+                                <label for="needby">Needed by (date)</label>
+                                <input id="needby" name="needby" type="date" required>
+                            </div>
+
+                            <div class="full">
+                                <label for="details">Text / theme idea</label>
+                                <textarea id="details" name="details"
+                                    placeholder="e.g., 'Mariano' + blue/gray + Minecraft theme" required></textarea>
+                            </div>
+
+                            <div class="full">
+                                <label for="colors">Color preferences</label>
+                                <input id="colors" name="colors" type="text" placeholder="e.g., gold + black">
+                            </div>
+
+                            <div class="full">
+                                <button class="btn btn--gold" type="submit">Get an estimate</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="muted" style="margin-top: .75rem;">Average reply time: 24–48 hours</p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> 3D XD</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

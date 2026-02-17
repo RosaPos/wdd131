@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="3D XD contact request received confirmation page.">
+    <meta name="author" content="Rosa Angela Posadas Hernandez">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>3D XD | Request Sent</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/contact-success.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header__bar">
+            <a class="brand" href="index.html">
+                <img src="images/3dxd-logo.svg" alt="3D XD logo" width="96" height="96">
+                <span class="brand__name">3D XD</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products &amp; Services</a>
+                <a class="btn btn--gold" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section section--soft">
+        <div class="container">
+            <section class="card success-card">
+                <h1 class="success-title">Thanks for your request ✅</h1>
+                <p class="muted">We will reply soon.</p>
+    
+                <p class="muted" style="margin-top: 1rem;">Total quote requests submitted:</p>
+                <p class="success-count"><span id="quoteCount">0</span></p>
+
+                <hr class="success-divider" />
+
+                    <h2 style="margin-top:1rem;">Your request summary</h2>
+                    <div id="summary" class="muted"></div>
+
+                    <div class="cta-row" style="justify-content:flex-start; margin-top:1rem;">
+                        <a class="btn btn--gold" href="contact.html">Send another request</a>
+                        <a class="btn btn--primary" href="products.html">See products</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> 3D XD</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

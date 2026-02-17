@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>3D XD | Site Plan</title>
 
-    <meta name="description" content="Site plan for 3D XD, a custom 3D printing business website: purpose, audience scenarios, color palette, typography, and wireframes." />
+    <meta name="description"
+        content="Site plan for 3D XD, a custom 3D printing business website: purpose, audience scenarios, color palette, typography, and wireframes." />
     <meta name="author" content="Rosa Angela Posadas Hernandez" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="siteplan.css" />
+    <link rel="stylesheet" href="styles/siteplan.css" />
 
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
+        <div class="container header__bar">
+            <a class="brand" href="index.html">
                 <img src="images/3dxd-logo.png" alt="3D XD logo – Custom 3D Printing Business" class="logo">
+                <span>3D XD</span>
+            </a>
 
-                <div>
-                    <h1>Website Planning Document</h1>
-                    <p class="subtitle">WDD 131 — W05 Site Plan</p>
-                </div>
-            </div>
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="products.html">Products &amp; Services</a>
+                <a class="btn btn--gold" href="contact.html">Contact</a>
+            </nav>
         </div>
     </header>
 
